@@ -1,0 +1,36 @@
+<!-- include the headers of ejs -->
+<%- include('partials/header') %>
+
+    <div class="container">
+        <h1>Hindi Quote Generator</h1>
+        <main>
+            <!-- <p>Click the button below to generate a random Hindi quote.</p> -->
+            <div class="response-data">
+                <span class="quote"><span>Quote:</span>
+                    <p id="quote">
+                        <%= quote %>
+                    </p>
+                </span>
+                <span class="type"><span>Type:</span>
+                    <p id="type">
+                        <%= type %>
+                    </p>
+                </span>
+            </div>
+            <form action="/" method="post">
+                <!-- <div class="params">
+                    <label for="success"><input type="radio" name="param" id="success">Success</label><br>
+                    <label for="love"><input type="radio" name="param" id="love">Love</label><br>
+                    <label for="attitude"><input type="radio" name="param" id="attitude">Attitude</label><br>
+                    <label for="positive"><input type="radio" name="param" id="positive">Positive</label><br>
+                    <label for="motivational"><input type="radio" name="param"
+                            id="motivational">Motivational</label><br>
+                    <label for="sad"><input type="radio" name="param" id="sad">Sad</label><br>
+                </div> -->
+                <button type="submit" id="generate">Generate</button>
+            </form>
+        </main>
+    </div>
+
+    <!-- include the footer of ejs -->
+    <%- include('partials/footer') %>
